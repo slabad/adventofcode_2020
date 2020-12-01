@@ -9,7 +9,9 @@ target_number = 2020
 for i, number in enumerate(numbers[:-1]): 
     complementary = target_number - number
     if complementary in numbers[i+1:]:  
-        print("Solution Found: {} and {}".format(number, complementary))
+        answer=number*complementary
+        print("Complementary Numbers Found: {} and {}".format(number, complementary))
+        print("Answer: ", answer)
         break
 else:  
     print("No solutions exist")
